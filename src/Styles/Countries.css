@@ -1,0 +1,53 @@
+.cardContainer {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 40px auto;
+}
+
+.filterSort {
+  height: 55px;
+  width: 95%;
+  margin: auto;
+}
+
+.filterSort > select {
+  height: 33px;
+  width: 188px;
+  border: none;
+  background-color: rgb(80, 84, 134);
+  border-radius: 6px;
+  color: white;
+  margin: 0 18px 19px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cardContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: auto;
+  }
+  .filterSort {
+    height: 160px;
+  }
+  .filterSort > select {
+    display: block;
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin: auto;
+  }
+  .filterSort {
+    height: 160px;
+  }
+}
